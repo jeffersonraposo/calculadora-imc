@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/icons/logoraposo.png" type="image/png">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <main id="container">
+        <div id="first">
+            <section id="img">
+                <img src="./assets/img/personal.svg" alt="Imagem Personal">
+            </section>
+            <section id="calculator">
+                <form id="form">
+                    <h1 id="title">
+                        Calculadora - IMC
+                    </h1>
+                    
+                    <div class="input-box">
+                        <label for="weight">
+                            Peso em Kg
+                        </label>
+                        <div class="input-box">
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <input type="text" id="weight" required>
+                            <span>
+                                Kg
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="height">
+                            Altura em metros
+                        </label>
+                        <div class="input-box">
+                            <i class="fa-solid fa-ruler"></i>
+                            <input type="text" id="height" required>
+                            <span>
+                                m
+                            </span>
+                        </div>
+                    </div>
+                    <button id="calculate">
+                        Calcular
+                    </button>
+                </form>
+    
+                <div id="infos" class="hidden">
+                    <div id="result">
+                        <div id="bmi">
+                            <span id="value"></span>
+                            <span>Seu IMC</span>
+                        </div>
+                        <div id="description">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div id="more_info">
+                        <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
+                            Mais informações sobre o IMC
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div id="credits">
+            <p>Desenvolvido por <a href="https://raposo.dev.br/sobre/" target="_blank">Jefferson Raposo</a></p>
+            <div class="contatos">
+                <a href="https://www.linkedin.com/in/jefferson-raposo/" target="_blank"><img src="./assets/icons/icons8-linkedin-240.png" alt="Linkedin"></a>
+                <a href="https://github.com/jeffersonraposo" target="_blank"><img src="./assets/icons/icons8-github-250-white.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
